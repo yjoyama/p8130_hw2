@@ -1,0 +1,12 @@
+---
+title: "Homework 2"
+author: "Yuki Joyama"
+date: "2023-10-10"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Problem 1
