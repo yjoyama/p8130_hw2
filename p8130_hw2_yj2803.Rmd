@@ -10,3 +10,45 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Problem 1
+$p$, the probability of having at least one dental checkup during a two-year period, is 0.73. 
+
+(a) Let X be the probability of x out of 56 random individuals to have at least one dental checkup. X~Bin(56, 0.73)
+
+```{r echo = F}
+# calculation
+a = choose(56, 40)*(0.73^40)*(0.27^16)
+```
+
+$P(X=40)=f(x)={n \choose x}p^x(1-p)^{n-x}={56 \choose 40}(0.73)^{40}(1-0.73)^{56-40}=$ `r round(a, 2)`  
+
+Therefore, the probability that exactly 40 of these individuals will have at least one dental check up is `r round(a*100, 2)`%
+
+(b)
+The probability that at least 40 of these individuals will have at least one dental checkup can be denoted as: 
+$P(X>=40) = 1 - P(X<40) = 1 - P(X<=39)$
+
+```{r echo = F, results = F}
+# calculation
+x = c(0:39)
+p = 0.73
+q = 1 - 0.73
+c = 0
+
+for (i in x){
+  c = ifelse(i %in% 0:39, c + choose(56, i)*(p^i)*(q^(56-i)), c)
+}
+
+b = 1 - c 
+
+# check using binomial distribution
+pbinom(39, 56, 0.73)
+```
+
+$P(X<=39)=P(X=0)+P(X=1)+...+P(X=39)=$ `r round(c, 2)`  
+Therefore, $P(X>=40)=1 - P(X<=39)=$ `r round(b, 2)`  
+&rarr; `r round(b*100, 2)`%
+
+(c)
+
+
+$P(X=40)=\frac{\lambda^xe^{-\lambda}}{x!}=\frac{0.73^{40}e^{-0.73}}{40!}$
