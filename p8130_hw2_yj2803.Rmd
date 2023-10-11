@@ -69,3 +69,15 @@ $P(X >= 39.5)=$ `r round(b_c, 2)`
 These are similar to the results of (a) and (b).
 
 (d)
+The expected value of X~Bin(56, 0.73) is:  
+$\mu=E(X)=np=$ `r round(np, 2)`
+
+(e)  
+The variance of X~Bin(56, 0.73) is:  
+$\sigma^2=var(X)=np(1-p)=$ `r round(npq, 2)`  
+Therefore, the standard deviation is `r round(sqrt(npq), 2)`
+
+# Problem 2
+
+
+
