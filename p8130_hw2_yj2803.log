@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.16)  10 OCT 2023 12:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.16)  11 OCT 2023 14:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -421,18 +421,18 @@ Package rerunfilecheck Info: File `p8130_hw2_yj2803.out' has not changed.
 (rerunfilecheck)             Checksum: 27AAB5807FF9BAA86A61241C1E74834F;92.
  ) 
 Here is how much of TeX's memory you used:
- 10478 strings out of 476928
- 164436 string characters out of 5824543
- 505766 words of memory out of 5000000
+ 10479 strings out of 476928
+ 164442 string characters out of 5824543
+ 507766 words of memory out of 5000000
  31557 multiletter control sequences out of 15000+600000
  509679 words of font info for 66 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  72i,6n,77p,321b,432s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on p8130_hw2_yj2803.pdf (1 page, 172340 bytes).
+{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
+Output written on p8130_hw2_yj2803.pdf (1 page, 148397 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
+ 86 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
  9 words of extra memory for PDF output out of 10000 (max. 10000000)
 

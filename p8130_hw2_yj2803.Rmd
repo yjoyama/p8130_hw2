@@ -49,6 +49,23 @@ Therefore, $P(X>=40)=1 - P(X<=39)=$ `r round(b, 2)`
 &rarr; `r round(b*100, 2)`%
 
 (c)
+```{r echo = F}
+# calculation
+npq = 56*p*q
+np = 56*p
+nq = 56*q
 
+# using normal distribution
+a_c = dnorm(39.5, mean = np, sd = sqrt(npq)) 
+b_c = 1 - pnorm(39.5, mean = np, sd = sqrt(npq))
+```
+$np=56 \times 0.73=$ `r np` > 10 and $nq=56 \times 0.73=$ `r nq` > 10  
+Thus we can approximate X to the normal distribution X~N(`r round(np, 2)`, `r round(sqrt(npq), 2)`) where P(X = 40) becomes $P(X = 40 - \frac{1}{2})$ and P(X >= 40) becomes $P(X >= 40 - \frac{1}{2})$  
 
-$P(X=40)=\frac{\lambda^xe^{-\lambda}}{x!}=\frac{0.73^{40}e^{-0.73}}{40!}$
+When X~N(`r round(np, 2)`, `r round(sqrt(npq), 2)`),  
+$P(X = 39.5)=$ `r round(a_c, 2)`  
+$P(X >= 39.5)=$ `r round(b_c, 2)`
+
+These are similar to the results of (a) and (b).
+
+(d)
