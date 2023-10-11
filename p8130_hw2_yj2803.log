@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.16)  11 OCT 2023 14:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.16)  11 OCT 2023 14:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -416,23 +416,23 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 10
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [1
 
-{/Users/yukijoyama/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./p8130_hw2_yj2803.aux)
+{/Users/yukijoyama/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./p8130_hw2_yj2803.aux)
 Package rerunfilecheck Info: File `p8130_hw2_yj2803.out' has not changed.
-(rerunfilecheck)             Checksum: 27AAB5807FF9BAA86A61241C1E74834F;92.
+(rerunfilecheck)             Checksum: 371221EDDA983AFA7046C78CE70B3B6F;276.
  ) 
 Here is how much of TeX's memory you used:
- 10481 strings out of 476928
- 164454 string characters out of 5824543
- 509766 words of memory out of 5000000
- 31557 multiletter control sequences out of 15000+600000
- 509679 words of font info for 66 fonts, out of 8000000 for 9000
+ 10495 strings out of 476928
+ 164585 string characters out of 5824543
+ 510831 words of memory out of 5000000
+ 31562 multiletter control sequences out of 15000+600000
+ 512674 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,6n,77p,321b,432s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on p8130_hw2_yj2803.pdf (1 page, 150041 bytes).
+ 72i,6n,77p,321b,433s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></Users/yukijoyama/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
+Output written on p8130_hw2_yj2803.pdf (2 pages, 204038 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -21,7 +21,7 @@ a = choose(56, 40)*(0.73^40)*(0.27^16)
 
 $P(X=40)=f(x)={n \choose x}p^x(1-p)^{n-x}={56 \choose 40}(0.73)^{40}(1-0.73)^{56-40}=$ `r round(a, 2)`  
 
-Therefore, the probability that exactly 40 of these individuals will have at least one dental check up is `r round(a*100, 2)`%
+Therefore, the probability that exactly 40 of these individuals will have at least one dental check up is **`r round(a*100, 2)`%**
 
 (b)
 The probability that at least 40 of these individuals will have at least one dental checkup can be denoted as: 
@@ -46,7 +46,7 @@ pbinom(39, 56, 0.73)
 
 $P(X<=39)=P(X=0)+P(X=1)+...+P(X=39)=$ `r round(c, 2)`  
 Therefore, $P(X>=40)=1 - P(X<=39)=$ `r round(b, 2)`  
-&rarr; `r round(b*100, 2)`%
+&rarr; **`r round(b*100, 2)`%**
 
 (c)
 ```{r echo = F}
@@ -63,21 +63,70 @@ $np=56 \times 0.73=$ `r np` > 10 and $nq=56 \times 0.73=$ `r nq` > 10
 Thus we can approximate X to the normal distribution X~N(`r round(np, 2)`, `r round(sqrt(npq), 2)`) where P(X = 40) becomes $P(X = 40 - \frac{1}{2})$ and P(X >= 40) becomes $P(X >= 40 - \frac{1}{2})$  
 
 When X~N(`r round(np, 2)`, `r round(sqrt(npq), 2)`),  
-$P(X = 39.5)=$ `r round(a_c, 2)`  
-$P(X >= 39.5)=$ `r round(b_c, 2)`
+$P(X = 39.5)=$ **`r round(a_c, 2)`** 
+$P(X >= 39.5)=$ **`r round(b_c, 2)`**
 
 These are similar to the results of (a) and (b).
 
 (d)
 The expected value of X~Bin(56, 0.73) is:  
-$\mu=E(X)=np=$ `r round(np, 2)`
+$\mu=E(X)=np=$ **`r round(np, 2)`**
 
 (e)  
 The variance of X~Bin(56, 0.73) is:  
 $\sigma^2=var(X)=np(1-p)=$ `r round(npq, 2)`  
-Therefore, the standard deviation is `r round(sqrt(npq), 2)`
+Therefore, the standard deviation is **`r round(sqrt(npq), 2)`**
 
 # Problem 2
+Suppose the number of tornadoes in the U.S. follows a Poisson distribution with parameter $\lambda=6$ tornadoes per year.  
+Let X denote the number of tornadoes in the U.S. per year. X~Poi(6)
+
+(a)
+```{r echo = F}
+# calculation
+ax0 = ((6^0)*(exp(1)^-6))/(1)  
+ax1 = ((6^1)*(exp(1)^-6))/(1)  
+ax2 = ((6^2)*(exp(1)^-6))/(2*1)  
+```
+The probability of having fewer than 3 tornadoes in the U.S. next year is   
+$P(X<3)=P(X=0)+P(X=1)+P(X=2)$  
+$P(X=x)=f(x)=\frac{\lambda^xe^{-\lambda}}{x!}$ so, 
+
+$P(X=0)=\frac{6^0e^{-6}}{0!}=$ `r round(ax0, 2)`  
+$P(X=1)=\frac{6^1e^{-6}}{1!}=$ `r round(ax1, 2)`  
+$P(X=2)=\frac{6^2e^{-6}}{2!}=$ `r round(ax2, 2)`    
+
+Therefore, $P(X<3)=$ **`r round(ax0 + ax1 + ax2, 2)`**
+
+(b) 
+```{r echo = F, results = F}
+# calculation
+b2 = ((6^3)*(exp(1)^-6))/(3*2*1)
+
+# check
+dpois(3, 6)
+```
+The probability of having exactly 3 tornadoes in the U.S. next year is  
+$P(X=3)=\frac{6^3e^{-6}}{3!}=$ **`r round(b2, 2)`**
+
+(c)
+```{r echo = F, results = F}
+# check
+ppois(3, 6, lower.tail = F)
+# plot(0:20, dpois(0:20, lambda=6), type='h')
+```
+
+The probability of having more than 3 tornadoes in the U.S. next year is   
+$P(X>3)=1-P(X<=3)= 1-(P(X<3)+P(X=3))=$ **`r round(1 - (ax0+ax1+ax2+b2), 2)`**
+
+# Problem 3
+
+
+
+
+
+
+
 
 
 
