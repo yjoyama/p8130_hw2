@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 # Problem 1
 $p$, the probability of having at least one dental checkup during a two-year period, is 0.73. 
 
-(a) Let X be the probability of x out of 56 random individuals to have at least one dental checkup. X~Bin(56, 0.73)
+(a) Let X be the the number of people (out of 56 random individuals) that have at least one dental checkup. X~Bin(56, 0.73)
 
 ```{r echo = F}
 # calculation
@@ -25,7 +25,7 @@ Therefore, the probability that exactly 40 of these individuals will have at lea
 
 (b)
 The probability that at least 40 of these individuals will have at least one dental checkup can be denoted as: 
-$P(X>=40) = 1 - P(X<40) = 1 - P(X<=39)$
+$P(X\geq40) = 1 - P(X<40) = 1 - P(X\leq39)$
 
 ```{r echo = F, results = F}
 # calculation
@@ -44,8 +44,8 @@ b = 1 - c
 pbinom(39, 56, 0.73)
 ```
 
-$P(X<=39)=P(X=0)+P(X=1)+...+P(X=39)=$ `r round(c, 2)`  
-Therefore, $P(X>=40)=1 - P(X<=39)=$ `r round(b, 2)`  
+$P(X\leq39)=P(X=0)+P(X=1)+...+P(X=39)=$ `r round(c, 2)`  
+Therefore, $P(X\geq40)=1 - P(X\leq39)=$ `r round(b, 2)`  
 &rarr; **`r round(b*100, 2)`%**
 
 (c)
@@ -60,11 +60,11 @@ a_c = dnorm(39.5, mean = np, sd = sqrt(npq))
 b_c = 1 - pnorm(39.5, mean = np, sd = sqrt(npq))
 ```
 $np=56 \times 0.73=$ `r np` > 10 and $nq=56 \times 0.73=$ `r nq` > 10  
-Thus we can approximate X to the normal distribution X~N(`r round(np, 2)`, `r round(sqrt(npq), 2)`) where P(X = 40) becomes $P(X = 40 - \frac{1}{2})$ and P(X >= 40) becomes $P(X >= 40 - \frac{1}{2})$  
+Thus we can approximate X to the normal distribution X~N(`r round(np, 2)`, `r round(sqrt(npq), 2)`) where $P(X = 40)$ becomes $P(X = 40 - \frac{1}{2})$ and $P(X \geq 40)$ becomes $P(X \geq 40 - \frac{1}{2})$  
 
 When X~N(`r round(np, 2)`, `r round(sqrt(npq), 2)`),  
-$P(X = 39.5)=$ **`r round(a_c, 2)`** 
-$P(X >= 39.5)=$ **`r round(b_c, 2)`**
+$P(X = 39.5)=$ **`r round(a_c, 2)`**   
+$P(X \geq 39.5)=$ **`r round(b_c, 2)`**
 
 These are similar to the results of (a) and (b).
 
@@ -113,16 +113,58 @@ $P(X=3)=\frac{6^3e^{-6}}{3!}=$ **`r round(b2, 2)`**
 ```{r echo = F, results = F}
 # check
 ppois(3, 6, lower.tail = F)
-# plot(0:20, dpois(0:20, lambda=6), type='h')
 ```
-
 The probability of having more than 3 tornadoes in the U.S. next year is   
-$P(X>3)=1-P(X<=3)= 1-(P(X<3)+P(X=3))=$ **`r round(1 - (ax0+ax1+ax2+b2), 2)`**
+$P(X>3)=1-P(X\leq3)= 1-(P(X<3)+P(X=3))=$ **`r round(1 - (ax0+ax1+ax2+b2), 2)`**
 
 # Problem 3
+Assume the systolic blood pressure (SBP) of 20-29 year old American males is normally distributed with population mean 128.0 and population standard deviation 10.2.  
 
+Let X denote the systolic blood pressure of 20-29 year old American males.   
+Now,  
+X~N(128.0, 10.2), $\mu=128.0$, $\sigma=10.2$  
 
+(a)
+The probability that a randomly selected American male between 20 and 29 years old has a SBP above 137.0 is $P(X>137.0)=1-P(X\leq137.0)$ 
 
+$P(X<x)=\int_{-\infty}^{x}f(x)=\int_{-\infty}^{x}\frac{1}{\sigma\sqrt{2\pi}}e^{\frac{-(x-\mu)^2}{2\sigma^2}}$  
+So, $P(X\leq137.0)=\int_{-\infty}^{137}\frac{1}{10.2\sqrt{2\pi}}e^{\frac{-(137-128)^2}{2\times10.2^2}}=$ `r round(pnorm(137, 128, 10.2), 2)`    
+Therefore, 
+$P(X>137.0)=1-P(X\leq137.0)=$ **`r round(1-pnorm(137, 128, 10.2), 2)`**
+
+(b)
+Let $\bar X$ denote the sampling distribution (n=50). The underlying population distribution is normal, so $\bar X$~$N(\mu, \frac{\sigma^2}{n})$ = $\bar X$~$N(128.0, \frac{10.2^2}{50})$  
+
+The probability of sample mean of blood pressure of 50 males between 20 and 29 yaers old to be less than 125.0 is $P(\bar X<125.0)=$ **`r round(pnorm(125, 128, (10.2^2)/50), 2)`**
+
+(c)
+When sample size is 40, the sampling distribution $\bar X$~$N(128.0, \frac{10.2^2}{40})$   
+The 90th percentile of this distribution is **`r round(qnorm(0.9, 128, (10.2^2)/40), 2)`**
+
+# Problem 4
+Let $\bar X$ denote the sample distribution (n=40): $\frac{\bar X-\mu}{s/\sqrt n}$~$t_{(n-1)}$  
+
+(a) The population standard deviation is unknown, so 95% confidence interval for the population mean pulse rate of young females with fibromyalgia is  
+
+$\bar X-t_{n-1, 1-\alpha/2}\frac{s}{\sqrt n}\leq \mu\leq\bar X+t_{n-1, 1-\alpha/2}\frac{s}{\sqrt n}$  
+$t_{39,.975}=$ `r round(qt(.975, 39), 2)`  
+
+Therefore, 95% confidence interval is  
+$[80-$ `r round(qt(.975, 39), 2)` $(10)/\sqrt 40, 80+$ `r round(qt(.975, 39), 2)` $(10)/\sqrt 40]=$ **(`r round(80-qt(.975, 39)*10/sqrt(40), 2)`, `r round(80+qt(.975, 39)*10/sqrt(40), 2)`)**
+
+(b)
+When we repeat drawing samples from the same population, among 95% confidence intervals calculated from each sample, 95% of them has the population mean $\mu$. And (`r round(80-qt(.975, 39)*10/sqrt(40), 2)`, `r round(80+qt(.975, 39)*10/sqrt(40), 2)`) is one of the ranges that was calculated from this particular experiment.
+
+(c)
+Let $\mu_0=70$     
+$H_0:$ the mean pulse = 70, $H_1:$ the mean pulse $\neq$ 70 ($\alpha=0.01$)  
+
+The test statistic is $t=\frac{\bar X-\mu_o}{s/\sqrt n}=\frac{80-70}{10/\sqrt40}=$ `r round(10/(10/sqrt(40)), 2)`
+
+$t_{n-1, 1-\alpha/2}=$ `r round(qt(.995, 39), 2)`   
+$|t|>t_{n-1, 1-\alpha/2}$ and we fail to reject the null hypothesis at a significance level of .01.
+
+Thus, the mean pulse of young women suffering from fibromyalgia does not differ significantly from 70.  
 
 
 
