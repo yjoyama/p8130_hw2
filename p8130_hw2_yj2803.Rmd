@@ -70,7 +70,7 @@ These are similar to the results of (a) and (b).
 
 (d)
 The expected value of X~Bin(56, 0.73) is:  
-$\mu=E(X)=np=$ **`r round(np, 2)`**
+$\mu=E(X)=np=$ **`r round(np)`**
 
 (e)  
 The variance of X~Bin(56, 0.73) is:  
