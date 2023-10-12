@@ -133,13 +133,13 @@ Therefore,
 $P(X>137.0)=1-P(X\leq137.0)=$ **`r round(1-pnorm(137, 128, 10.2), 2)`**
 
 (b)
-Let $\bar X$ denote the sampling distribution (n=50). The underlying population distribution is normal, so $\bar X$~$N(\mu, \frac{\sigma^2}{n})$ = $\bar X$~$N(128.0, \frac{10.2^2}{50})$  
+Let $\bar X$ denote the sampling distribution (n=50). The underlying population distribution is normal, so $\bar X$~$N(\mu, \frac{\sigma^2}{n})$ = $\bar X$~$N(128.0, \frac{10.2}{\sqrt50})$  
 
-The probability of sample mean of blood pressure of 50 males between 20 and 29 yaers old to be less than 125.0 is $P(\bar X<125.0)=$ **`r round(pnorm(125, 128, (10.2^2)/50), 2)`**
+The probability of sample mean of blood pressure of 50 males between 20 and 29 yaers old to be less than 125.0 is $P(\bar X<125.0)=$ **`r round(pnorm(125, 128, (10.2)/sqrt(50)), 2)`**
 
 (c)
-When sample size is 40, the sampling distribution $\bar X$~$N(128.0, \frac{10.2^2}{40})$   
-The 90th percentile of this distribution is **`r round(qnorm(0.9, 128, (10.2^2)/40), 2)`**
+When sample size is 40, the sampling distribution $\bar X$~$N(128.0, \frac{10.2}{\sqrt40})$   
+The 90th percentile of this distribution is **`r round(qnorm(0.9, 128, (10.2)/sqrt(40)), 2)`**
 
 # Problem 4
 Let $\bar X$ denote the sample distribution (n=40): $\frac{\bar X-\mu}{s/\sqrt n}$~$t_{(n-1)}$  
@@ -162,9 +162,9 @@ $H_0:$ the mean pulse = 70, $H_1:$ the mean pulse $\neq$ 70 ($\alpha=0.01$)
 The test statistic is $t=\frac{\bar X-\mu_o}{s/\sqrt n}=\frac{80-70}{10/\sqrt40}=$ `r round(10/(10/sqrt(40)), 2)`
 
 $t_{n-1, 1-\alpha/2}=$ `r round(qt(.995, 39), 2)`   
-$|t|>t_{n-1, 1-\alpha/2}$ and we fail to reject the null hypothesis at a significance level of .01.
+$|t|>t_{n-1, 1-\alpha/2}$ so we reject the null hypothesis at a significance level of .01.
 
-Thus, the mean pulse of young women suffering from fibromyalgia does not differ significantly from 70.  
+Thus, the mean pulse of young women suffering from fibromyalgia does differ significantly from 70.  
 
 
 
