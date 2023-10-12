@@ -21,7 +21,7 @@ a = choose(56, 40)*(0.73^40)*(0.27^16)
 
 $P(X=40)=f(x)={n \choose x}p^x(1-p)^{n-x}={56 \choose 40}(0.73)^{40}(1-0.73)^{56-40}=$ `r round(a, 2)`  
 
-Therefore, the probability that exactly 40 of these individuals will have at least one dental check up is **`r round(a*100, 2)`%**
+Therefore, the probability that exactly 40 of these individuals will have at least one dental check up is **`r round(a, 2)`**
 
 (b)
 The probability that at least 40 of these individuals will have at least one dental checkup can be denoted as: 
@@ -45,8 +45,8 @@ pbinom(39, 56, 0.73)
 ```
 
 $P(X\leq39)=P(X=0)+P(X=1)+...+P(X=39)=$ `r round(c, 2)`  
-Therefore, $P(X\geq40)=1 - P(X\leq39)=$ `r round(b, 2)`  
-&rarr; **`r round(b*100, 2)`%**
+Therefore, $P(X\geq40)=1 - P(X\leq39)=$ **`r round(b, 2)`**
+
 
 (c)
 ```{r echo = F}
