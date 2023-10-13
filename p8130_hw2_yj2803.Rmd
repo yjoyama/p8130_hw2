@@ -133,7 +133,7 @@ Therefore,
 $P(X>137.0)=1-P(X\leq137.0)=$ **`r round(1-pnorm(137, 128, 10.2), 2)`**
 
 (b)
-Let $\bar X$ denote the sampling distribution (n=50). The underlying population distribution is normal, so $\bar X$~$N(\mu, \frac{\sigma^2}{n})$ = $\bar X$~$N(128.0, \frac{10.2}{\sqrt50})$  
+Let $\bar X$ denote the sampling distribution (n=50). The underlying population distribution is normal, so $\bar X$~$N(\mu, \frac{\sigma}{\sqrt n})$ = $\bar X$~$N(128.0, \frac{10.2}{\sqrt50})$  
 
 The probability of sample mean of blood pressure of 50 males between 20 and 29 yaers old to be less than 125.0 is $P(\bar X<125.0)=$ **`r round(pnorm(125, 128, (10.2)/sqrt(50)), 2)`**
 
